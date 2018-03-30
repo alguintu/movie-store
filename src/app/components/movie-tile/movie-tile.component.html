@@ -1,0 +1,10 @@
+<img src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" *ngIf="movie.poster_path" title="{{movie.title}}" class="img-responsive"
+alt=" ">
+<img src="assets/no-image.jpg" class="img-responsive" *ngIf="!movie.poster_path">
+<div class="hvr-inner">
+            <a href="#"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+          </div>
+    <div class="mv-item-infor">
+      <h6><a href="#">{{movie.title}} ({{movie.release_date | date:'yyyy'}})</a></h6>
+      <p class="rate"><i class="ion-android-star"></i><span>{{movie.vote_average}}</span> /10</p>
+    </div>

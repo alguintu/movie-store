@@ -1,0 +1,9 @@
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <app-sort [results]="totalRecords"></app-sort>
+        <div class="flex-wrap-movielist mv-grid-fw">
+            <div class="movie-item-style-2 movie-item-style-1" *ngFor="let movie of movies;">
+                <movie-tile [movie]='movie'></movie-tile>
+            </div>					
+        </div>		
+    <app-pagination [totalItems]="totalRecords" [pageSize]="pageSize" (pageChanged)="pageChanged($event)" *ngIf="totalRecords > 0"></app-pagination>
+</div>

@@ -1,0 +1,4 @@
+.disabled, .disabled i:hover {
+    color: gray !important;
+    cursor: default !important;
+}
